@@ -12,6 +12,9 @@
 - Put a script tag similar to this `<script src='node_modules/taavi-skeptic/dist/fetch.js></script>` in the head of your index.html
 - Then you can use the component
 
+
+
+
 ## Getting Started
 
 To start a new project using Stencil, clone this repo to a new directory:
