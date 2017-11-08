@@ -6,31 +6,33 @@
 
 import '@stencil/router';
 
-import { MyName as MyName } from './components/my-name/my-name';
+import { TaaviSkeptic as TaaviSkeptic } from './components/taavi-skeptic/taavi-skeptic';
 
-interface HTMLMyNameElement extends MyName, HTMLElement {
+interface HTMLTaaviSkepticElement extends TaaviSkeptic, HTMLElement {
 }
-declare var HTMLMyNameElement: {
-  prototype: HTMLMyNameElement;
-  new (): HTMLMyNameElement;
+declare var HTMLTaaviSkepticElement: {
+  prototype: HTMLTaaviSkepticElement;
+  new (): HTMLTaaviSkepticElement;
 };
 declare global {
   interface HTMLElementTagNameMap {
-      "my-name": HTMLMyNameElement;
+      "taavi-skeptic": HTMLTaaviSkepticElement;
   }
   interface ElementTagNameMap {
-      "my-name": HTMLMyNameElement;
+      "taavi-skeptic": HTMLTaaviSkepticElement;
   }
   namespace JSX {
       interface IntrinsicElements {
-          "my-name": JSXElements.MyNameAttributes;
+          "taavi-skeptic": JSXElements.TaaviSkepticAttributes;
       }
   }
   namespace JSXElements {
-      export interface MyNameAttributes extends HTMLAttributes {
+      export interface TaaviSkepticAttributes extends HTMLAttributes {
+          mode?: string,
+          color?: string,
         
-          first?: any,
-          last?: any
+          first?: string,
+          last?: string
       }
   }
 }

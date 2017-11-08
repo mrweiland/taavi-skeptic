@@ -1,6 +1,6 @@
 exports.config = {
   bundles: [
-    { components: ['my-name'] }
+    { components: ['taavi-skeptic'] }
   ],
   collections: [
     { name: '@stencil/router' }
